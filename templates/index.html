@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{ url_for('static',filename='images/icons/favicon.ico') }}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/animate/animate.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/animsition/css/animsition.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/select2/select2.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/daterangepicker/daterangepicker.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" method="POST" action="http://localhost:5000/result">
+				<span class="contact100-form-title">
+					Welcome
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Your Name</span>
+					<input class="input100" type="text" name="name" placeholder="Enter your name">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Accredtion</span>
+					<div>
+						<select class="selection-2" name="accredtion">
+							<option>Yes</option>
+							<option>No</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 input100-select">
+						<span class="label-input100">State</span>
+						<div>
+							<select class="selection-2" name="state">
+								<option>Jammu and Kashmir</option>
+								<option>Himachal Pradesh</option>
+								<option>Punjab</option>
+								<option>Chandigarh</option>
+								<option>Uttrakhand</option>
+								<option>Haryana</option>
+								<option>Delhi</option>
+								<option>Rajasthan</option>
+								<option>Uttar Pradesh</option>
+								<option>Bihar</option>
+								<option>Sikkim</option>
+								<option>Arunachal Pradesh</option>
+								<option>Nagaland</option>
+								<option>Manipur</option>
+								<option>Mizoram</option>
+								<option>Tripura</option>
+								<option>Meghalaya</option>
+								<option>Assam</option>
+								<option>West Bengal</option>
+								<option>Jharkhand</option>
+								<option>Odisha</option>
+								<option>Chhatisgarh</option>
+								<option>Madhya Pradesh</option>
+								<option>Gujarat</option>
+								<option>Daman & Diu</option>
+								<option>Dadra & Nagar Haveli</option>
+								<option>Maharashtra</option>
+								<option>Andhra Pradesh</option>
+								<option>Karnataka</option>
+								<option>Goa</option>
+								<option>Lakshadweep</option>
+								<option>Kerala</option>
+								<option>Tamil Nadu</option>
+								<option>Puducherry</option>
+								<option>Andaman & Nicobar Islands</option>
+								<option>Telangana</option>					
+								
+							</select>
+						</div>
+						<span class="focus-input100"></span>
+					</div>
+	
+					
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Field</span>
+					<div>
+						<select class="selection-2" name="field">
+							<option>Agriculture</option>
+							<option>Area Studies</option>
+							<option>Commerce</option>
+							<option>Criminology & Forensic Science</option>
+							<option>Defence Studies</option>
+							<option>Education</option>
+							<option>Engineering & Technology</option>
+							<option>Fashion Technology</option>
+							<option>Fine Arts</option>
+							<option>Foreign Language</option>
+							<option>Gandhian Studies</option>
+							<option>Home Science</option>
+							<option>Indian Language</option>
+							<option>Journalism & Mass Communication</option>
+							<option>Law</option>
+							<option>Library & Information Science</option>
+							<option>Linguistics</option>
+							<option>Management</option>
+							<option>Marine Science / Oceanography</option>
+							<option>Medical Science</option>
+							<option>Oriental Learning</option>
+							<option>Physical Education</option>
+							<option>Religious Studies</option>
+							<option>Science</option>
+							<option>Social Science</option>
+							<option>Social Work</option>
+							<option>Women Studies</option>
+							<option>Arts</option>
+							<option>Cultural Studies</option>
+							<option>Design</option>
+							<option>Fisheries Science</option>
+							<option>IT & Computer</option>
+							<option>Veterinary & Animal Sciences</option>
+							<option>Disability Studies</option>
+							
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Infrastructure</span>
+					<div>
+						<select class="selection-2" name="infra">
+							<option>Not Required</option>
+							<option>Excellent</option>
+							<option>Very Good</option>
+							<option>Good</option>
+							<option>Satisfactory</option>
+							<option>Bad</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Student Density</span>
+					<div>
+						<select class="selection-2" name="density">
+							<option>Not Required</option>
+							<option>High</option>
+							<option>Medium</option>
+							<option>Low</option>
+							<option>Very Low</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" type="submit">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="{{ url_for('static',filename='vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static',filename='vendor/animsition/js/animsition.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static',filename='vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static',filename='vendor/select2/select2.min.js') }}"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static',filename='vendor/daterangepicker/moment.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='vendor/daterangepicker/daterangepicker.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static',filename='vendor/countdowntime/countdowntime.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static',filename='js/main.js') }}"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
